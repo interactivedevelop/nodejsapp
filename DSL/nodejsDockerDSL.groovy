@@ -23,7 +23,7 @@ job('Aplicacion Node.js Docker DSL') {
         }
     }
     publishers {
-	slackNotifier {
+    slackNotifier {
             notifyAborted(true)
             notifyEveryFailure(true)
             notifyNotBuilt(false)
