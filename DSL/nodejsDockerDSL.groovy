@@ -19,6 +19,7 @@ job('Aplicacion Node.js Docker DSL') {
             /* groovylint-disable-next-line GStringExpressionWithinString */
             tag('${GIT_REVISION,length=7}')
             registryCredentials('docker-hub')
+            forceTag(false)
             forcePull(false)
             createFingerprints(false)
             skipDecorate()
